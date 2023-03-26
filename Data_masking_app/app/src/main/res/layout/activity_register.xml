@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/tree_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/b_tree_up" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tree_up"
+            android:layout_marginTop="98dp"
+            android:src="@drawable/double_tree" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/tree_down" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/singup_logo" />
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginStart="29dp"
+            android:text="Đăng ký"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:fontFamily="@font/iner_bold" />
+
+        <Button
+            android:id="@+id/show_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/titleTextView"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="29dp"
+            android:text="Hiển thị"
+            android:background="@drawable/my_button_background"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/iner_bold"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/hide_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/show_button"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="5dp"
+            android:text="Ẩn"
+            android:background="@drawable/my_button_background"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/iner_bold"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/titleTextView"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEditText"
+            android:layout_marginTop="24dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_marginTop="24dp"
+            android:hint="Tên"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/genderEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameEditText"
+            android:layout_marginTop="24dp"
+            android:background="@color/background"
+            android:hint="Giới tính"
+            android:padding="8dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/gender_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameEditText"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/genderEditText"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Nam"/>
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/male_radio_button"
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginStart="28dp"
+                android:text="Nữ" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/birthdayEditText"
+            android:layout_marginTop="24dp"
+            android:hint="Địa chỉ"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/birthdayEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderEditText"
+            android:layout_marginTop="24dp"
+            android:hint="Ngày sinh"
+            android:maxLength="10"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressEditText"
+            android:layout_marginTop="24dp"
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:padding="8dp"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/creditCardEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneNumberEditText"
+            android:layout_marginTop="24dp"
+            android:hint="Số tài khoản ngân hàng"
+            android:padding="8dp"
+            android:maxLength="19"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/personalNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/creditCardEditText"
+            android:layout_marginTop="24dp"
+            android:maxLength="12"
+            android:inputType="number"
+            android:hint="Số chứng minh nhân dân/ CCCD"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/personalNumberEditText"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_button_background"
+            android:text="Đăng ký"
+            android:fontFamily="@font/iner_bold"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

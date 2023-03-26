@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.UpdateActivity">
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên người dùng"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/name_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/name_label"
+        android:layout_alignBaseline="@+id/name_label"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/gender_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính"
+        android:layout_below="@+id/name_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/gender_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/gender_label"
+        android:layout_alignBaseline="@+id/gender_label"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/dob_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh"
+        android:layout_below="@+id/gender_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/dob_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/dob_label"
+        android:layout_alignBaseline="@+id/dob_label"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:layout_below="@+id/dob_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/address_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/address_label"
+        android:layout_alignBaseline="@+id/address_label"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/phone_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số Điện thoại"
+        android:layout_below="@+id/address_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/phone_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/phone_lable"
+        android:layout_alignBaseline="@+id/phone_lable"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/credit_card_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tài khoản"
+        android:layout_below="@+id/phone_lable"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/bank_card_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/credit_card_lable"
+        android:layout_alignBaseline="@+id/credit_card_lable"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/personal_number_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số CMND/CCCD"
+        android:layout_below="@+id/credit_card_lable"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/id_card_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/personal_number_lable"
+        android:layout_alignBaseline="@+id/personal_number_lable"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/oke_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_below="@+id/personal_number_lable"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

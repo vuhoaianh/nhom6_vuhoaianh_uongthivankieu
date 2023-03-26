@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VHA_UserAPI-master/UserApi.iml" filepath="$PROJECT_DIR$/VHA_UserAPI-master/UserApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VHA_UserAPI-master.iml" filepath="$PROJECT_DIR$/.idea/VHA_UserAPI-master.iml" />
+    </modules>
+  </component>
+</project>
